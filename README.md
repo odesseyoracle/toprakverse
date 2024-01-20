@@ -1,8 +1,17 @@
-# React + Vite
+# ToprakVerse - Social Media Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction
 
-Currently, two official plugins are available:
+Welcome to ToprakVerse, a social media website developed as a project for the SAP module of the Web Development course at DCI Berlin. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+### 1. 
+
+
+### 2. 
+
+
+
+### 3. 
+
