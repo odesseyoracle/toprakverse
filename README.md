@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to ToprakVerse, a social media website developed as a project for the SAP module of the Web Development course at DCI Berlin. 
+Welcome to ToprakVerse, a dummy social media website developed as a project for the SAP module of the Web Development course at DCI Berlin. 
 
 ## Features
 
