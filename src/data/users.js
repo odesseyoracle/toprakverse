@@ -1,6 +1,7 @@
 export const users = [
   {
     id: 1,
+    loggedIn: false,
     userName: "daria",
     fName: "Daria",
     lName: "Morgendorffer",
@@ -12,6 +13,7 @@ export const users = [
   },
   {
     id: 2,
+    loggedIn: false,
     userName: "eleven",
     fName: "Jane",
     lName: "Ives",
@@ -23,6 +25,7 @@ export const users = [
   },
   {
     id: 3,
+    loggedIn: false,
     userName: "fry",
     fName: "Philip",
     lName: "Fry",
@@ -34,6 +37,7 @@ export const users = [
   },
   {
     id: 4,
+    loggedIn: false,
     userName: "fry",
     fName: "Philip",
     lName: "Fry",
@@ -46,6 +50,7 @@ export const users = [
 
   {
     id: 5,
+    loggedIn: false,
     userName: "garfield",
     fName: "Garfield",
     lName: "Arbuckle",
@@ -57,6 +62,7 @@ export const users = [
   },
   {
     id: 6,
+    loggedIn: false,
     userName: "jerry",
     fName: "Jerry",
     lName: "Mouse",
@@ -68,6 +74,7 @@ export const users = [
   },
   {
     id: 7,
+    loggedIn: false,
     userName: "kirby",
     fName: "Kirby",
     lName: "Nintendo",
@@ -80,6 +87,7 @@ export const users = [
 
   {
     id: 8,
+    loggedIn: false,
     userName: "mrbean",
     fName: "Mr.",
     lName: "Bean",
@@ -91,6 +99,7 @@ export const users = [
   },
   {
     id: 9,
+    loggedIn: false,
     userName: "patrick",
     fName: "Patrick",
     lName: "Star",
@@ -102,6 +111,7 @@ export const users = [
   },
   {
     id: 10,
+    loggedIn: false,
     userName: "peter",
     fName: "Peter",
     lName: "Griffin",
@@ -113,6 +123,7 @@ export const users = [
   },
   {
     id: 11,
+    loggedIn: false,
     userName: "pikachu",
     fName: "Pikachu",
     lName: "Ketchum",
@@ -124,6 +135,7 @@ export const users = [
   },
   {
     id: 12,
+    loggedIn: false,
     userName: "ron",
     fName: "Ron",
     lName: "Weasley",
@@ -135,6 +147,7 @@ export const users = [
   },
   {
     id: 13,
+    loggedIn: false,
     userName: "sailormoon",
     fName: "Usagi",
     lName: "Tsukino",
@@ -146,6 +159,7 @@ export const users = [
   },
   {
     id: 14,
+    loggedIn: false,
     userName: "salem",
     fName: "Salem",
     lName: "Saberhagen",
@@ -157,6 +171,7 @@ export const users = [
   },
   {
     id: 15,
+    loggedIn: false,
     userName: "shaggy",
     fName: "Shaggy",
     lName: "Rogers",
@@ -168,6 +183,7 @@ export const users = [
   },
   {
     id: 16,
+    loggedIn: false,
     userName: "squidward",
     fName: "Squidward",
     lName: "Tentacles",
@@ -179,6 +195,7 @@ export const users = [
   },
   {
     id: 17,
+    loggedIn: false,
     userName: "winniepooh",
     fName: "Winnie",
     lName: "the Pooh",
