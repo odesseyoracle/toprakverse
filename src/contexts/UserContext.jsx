@@ -1,8 +1,8 @@
 import { createContext, useContext, useReducer } from "react";
 import { users } from "../data/users";
 
-const UserContext = createContext();
-export const useUserContext = useContext(UserContext);
+const UserContext = createContext(null);
+export const useUserContext = () => useContext(UserContext);
 
 const userDataReducer = (state, action) => {
   switch (action.type) {
