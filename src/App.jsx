@@ -5,7 +5,7 @@ import Navigation from "./pages/Navigation";
 import Friends from "./pages/Friends";
 import UserProfile from "./pages/UserProfile";
 import SignUp from "./pages/SignUp";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -13,18 +13,15 @@ function App() {
       <button className="bg-primary hover:bg-secondary text-">
         Click hier
       </button>
-<Navigation />
 
-<BrowserRouter>
+      <Navigation />
       <Routes>
-<Route path="/" element={<Home />} />
-<Route path="/SignUp" element={<SignUp />} />
-<Route path="/Login" element={<Login />} />
-  <Route path="/Friends" element={<Friends />} />
-  <Route path="/UserProfile" element={<UserProfile />} />
-</Routes>
-</BrowserRouter>
-
+        <Route path="/toprakverse" index={true} element={<Home />} />
+        <Route path="/signUp" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/friends" element={<Friends />} />
+        <Route path="/userProfile" element={<UserProfile />} />
+      </Routes>
     </>
   );
 }

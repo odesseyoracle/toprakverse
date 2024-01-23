@@ -6,19 +6,19 @@ function Navigation() {
     <nav>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/toprakverse">Home</Link>
         </li>
         <li>
-          <Link to="/SignUp">Sign Up</Link>
+          <Link to="/signUp">Sign Up</Link>
         </li>
         <li>
-          <Link to="/UserProfile">Profil</Link>
+          <Link to="/userProfile">Profil</Link>
         </li>
         <li>
-          <Link to="/Friends">Friends</Link>
+          <Link to="/friends">Friends</Link>
         </li>
         <li>
-          <Link to="/Login">Log Out</Link>
+          <Link to="/login">Log Out</Link>
         </li>
       </ul>
     </nav>

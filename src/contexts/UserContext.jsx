@@ -1,7 +1,7 @@
 import { createContext, useContext, useReducer } from "react";
 import { users } from "../data/users";
 
-const UserContext = createContext();
+const UserContext = createContext(null);
 export const useUserContext = () => useContext(UserContext);
 
 const userDataReducer = (state, action) => {
