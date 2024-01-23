@@ -1,5 +1,6 @@
 import React from "react";
 import { useUserContext } from "../contexts/UserContext";
+import Card from "../components/Card";
 
 const Friends = () => {
   const { userData } = useUserContext();
