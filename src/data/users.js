@@ -1,3 +1,5 @@
+import daria from "../assets/images/users/daria.gif";
+
 export const users = [
   {
     id: 1,
@@ -7,7 +9,7 @@ export const users = [
     lName: "Morgendorffer",
     email: "daria.morgendorffer@gmail.com",
     password: "daria",
-    profilePicture: "../images/daria.gif",
+    profilePicture: daria,
     about:
       "Daria is an intelligent and sarcastic teenage girl known for her deadpan wit and cynical outlook on life. She lives in the fictional town of Lawndale with her well-meaning but clueless family. Daria is often portrayed as an outsider and a social critic, navigating the challenges of high school with her best friend Jane Lane. Despite her aloof demeanor, Daria is a complex character who grapples with issues of identity, friendship, and the absurdities of the world around her. The character resonated with audiences for her sharp observations and unconventional approach to societal norms.",
   },

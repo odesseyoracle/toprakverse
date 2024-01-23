@@ -5,3 +5,13 @@
 body {
   background-color: #fee4c1;
 }
+
+/* // <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 100 to 900
+
+.big-shoulders display-<uniquifier> {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */

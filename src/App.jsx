@@ -6,6 +6,7 @@ import Friends from "./pages/Friends";
 import UserProfile from "./pages/UserProfile";
 import SignUp from "./pages/SignUp";
 import { Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <button className="bg-primary hover:bg-secondary text-">
         Click hier
       </button>
-
+      <Header />
       <Navigation />
       <Routes>
         <Route path="/toprakverse" index={true} element={<Home />} />
