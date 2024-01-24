@@ -1,6 +1,6 @@
 import React from "react";
 
-const Input = ({ name, type, setMethod }) => {
+const Input = ({ name, type, setMethod, children }) => {
   function handleChange(e) {
     const { name, value } = e.target;
     setMethod((prev) => {
@@ -10,7 +10,7 @@ const Input = ({ name, type, setMethod }) => {
 
   return (
     <div>
-      <label htmlFor={name}>{name}</label>
+      <label htmlFor={name}>{children}</label>
       <br />
       <input type={type} name={name} id={name} onChange={handleChange} />
     </div>
