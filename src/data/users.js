@@ -35,8 +35,8 @@ export const users = [
     fName: "Jane",
     lName: "Ives",
     email: "eleven@gmail.com",
-    password: eleven,
-    profilePicture: "../images/eleven.gif",
+    password: "eleven",
+    profilePicture: eleven,
     about:
       "Eleven is a young girl with psychokinetic abilities who escapes from a secretive government laboratory. She encounters a group of kids in the town of Hawkins, forming a close bond with them. Eleven is characterized by her shaved head and distinctive telekinetic powers, which she often uses to protect her friends and confront the supernatural threats in Hawkins. As the series progresses, Eleven embarks on a journey of self-discovery, uncovering her mysterious past and the origins of her extraordinary abilities.",
   },
@@ -49,18 +49,6 @@ export const users = [
     email: "philip.fry@gmail.com",
     password: "fry",
     profilePicture: fry,
-    about:
-      "He is a delivery boy from the 20th century who, after accidentally freezing himself on December 31, 1999, wakes up 1,000 years in the future. Fry becomes an employee at Planet Express, a delivery company, where he interacts with a diverse group of characters, including his distant nephew, the one-eyed Leela, and the alcoholic robot Bender. Despite being initially portrayed as lazy and lacking ambition, Fry develops into a lovable, good-natured character known for his loyalty and moments of surprising wisdom. ",
-  },
-  {
-    id: 4,
-    loggedIn: false,
-    userName: "fry",
-    fName: "Philip",
-    lName: "Fry",
-    email: "philip.fry@gmail.com",
-    password: "fry",
-    profilePicture: "../images/fry.gif",
     about:
       "He is a delivery boy from the 20th century who, after accidentally freezing himself on December 31, 1999, wakes up 1,000 years in the future. Fry becomes an employee at Planet Express, a delivery company, where he interacts with a diverse group of characters, including his distant nephew, the one-eyed Leela, and the alcoholic robot Bender. Despite being initially portrayed as lazy and lacking ambition, Fry develops into a lovable, good-natured character known for his loyalty and moments of surprising wisdom. ",
   },
@@ -109,8 +97,8 @@ export const users = [
     fName: "Mr.",
     lName: "Bean",
     email: "mrbean@gmail.com",
-    password: mrbean,
-    profilePicture: "../images/mrbean.gif",
+    password: "mrbean",
+    profilePicture: mrbean,
     about:
       "Mr. Bean, played by Rowan Atkinson, is a bumbling and eccentric character known for his comedic misadventures. With a knack for finding himself in unusual situations, Mr. Bean relies on his wit and resourcefulness to navigate through life's challenges, often causing chaos and laughter wherever he goes.",
   },
@@ -205,8 +193,8 @@ export const users = [
     fName: "Squidward",
     lName: "Tentacles",
     email: "squidward.tentacles@gmail.com",
-    password: squidward,
-    profilePicture: "../images/squidward.gif",
+    password: "squidward",
+    profilePicture: squidward,
     about:
       "Squidward Tentacles is a grumpy and cynical octopus in the animated series 'SpongeBob SquarePants.' Working at the Krusty Krab alongside SpongeBob and Mr. Krabs, Squidward often finds himself annoyed by the cheerful antics of his coworkers. Despite his irritable nature, Squidward possesses artistic talents and dreams of a more sophisticated and peaceful life.",
   },

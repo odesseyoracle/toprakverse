@@ -8,19 +8,20 @@ const Friends = () => {
   const friends = userData.filter((user) => !user.loggedIn);
 
   return (
-    <>
-      <h1>Friends</h1>
+    <div className="m-20">
+      <h1 className="text-4xl font-extrabold">Friends</h1>
       <div>
         {friends.map((user) => {
           return (
             <Card
               userName={user.userName}
               profilePicture={user.profilePicture}
+              userId={user.id}
             />
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 
