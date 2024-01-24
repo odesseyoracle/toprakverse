@@ -9,12 +9,15 @@ const Login = () => {
   console.log("userData:", userData);
   const navigate = useNavigate();
 
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [currentUser, setCurrentUser] = useState("");
 
   function handleSubmit() {
+    console.log("username:", currentUser.username);
+    console.log("password:", currentUser.password);
     const user = userData.find(
-      (user) => user.userName === username && user.password === password
+      (user) =>
+        user.userName === currentUser.username &&
+        user.password === currentUser.password
     );
     console.log("found user:", user);
     if (user) {
@@ -27,8 +30,8 @@ const Login = () => {
 
   return (
     <div>
-      <Input name="username" type="text" setMethod={setUsername} />
-      <Input name="password" type="password" setMethod={setPassword} />
+      <Input name="username" type="text" setMethod={setCurrentUser} />
+      <Input name="password" type="password" setMethod={setCurrentUser} />
       <Button event={handleSubmit}>Log In</Button>
     </div>
   );
