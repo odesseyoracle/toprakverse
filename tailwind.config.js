@@ -2,6 +2,8 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontFamily: {
+      'sans': "Big Shoulders Display",
     extend: {
       colors: {
         primary: "#FEE4C1",
@@ -11,4 +13,5 @@ export default {
     },
   },
   plugins: [],
+},
 };
