@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Card = ({ userName, profilePicture }) => {
+const Card = ({ userId, userName, profilePicture }) => {
   return (
     <div className="card m-10">
       <img
@@ -9,6 +10,7 @@ const Card = ({ userName, profilePicture }) => {
         alt="Profile Picture"
       />
       <h2>{userName}</h2>
+      <Link to={`/friend/${userId}`}>show more</Link>
     </div>
   );
 };

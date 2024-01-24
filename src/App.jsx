@@ -7,6 +7,7 @@ import UserProfile from "./pages/UserProfile";
 import SignUp from "./pages/SignUp";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
+import { FriendPage } from "./pages/FriendPage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/friends" element={<Friends />} />
         <Route path="/userProfile" element={<UserProfile />} />
+        <Route path="/friend/:id" element={<FriendPage />} />
       </Routes>
     </>
   );

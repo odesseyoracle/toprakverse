@@ -16,6 +16,7 @@ const Friends = () => {
             <Card
               userName={user.userName}
               profilePicture={user.profilePicture}
+              userId={user.id}
             />
           );
         })}
