@@ -11,9 +11,6 @@ import Header from "./components/Header";
 function App() {
   return (
     <>
-      <button className="bg-primary hover:bg-secondary text-">
-        Click hier
-      </button>
       <Header />
       <Navigation />
       <Routes>
