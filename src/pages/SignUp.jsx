@@ -22,7 +22,7 @@ function SignUp() {
   };
 
   return (
-    <div className="signUp">
+    <div className="signUp bg-secondary p-8 rounded-md shadow-md max-w-md mx-auto mt-10">
       <h1>Sign Up</h1>
       <form onSubmit={handleSignUp}>
         <label htmlFor="fName">First Name</label>
