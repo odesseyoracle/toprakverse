@@ -5,7 +5,7 @@ import { useUserContext } from "../contexts/UserContext";
 const UserProfile = () => {
   const { userData } = useUserContext();
 
-  const loggedUser = userData.filter((user) => user.loggedIn);
+  const loggedUser = userData.find((user) => user.loggedIn);
 
   return (
     <>
