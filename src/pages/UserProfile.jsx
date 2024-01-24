@@ -8,9 +8,13 @@ const UserProfile = () => {
   const loggedUser = userData.find((user) => user.loggedIn);
 
   return (
-    <>
-      <h1>{loggedUser.userName}</h1>
-      <img src={loggedUser.profilePicture} alt="ProfilePicture" />
+    <main className="m-20 flex-col justify-center items-center">
+      <img
+        className="mx-auto border-2 border-black rounded-full w-60 h-60"
+        src={loggedUser.profilePicture}
+        alt="ProfilePicture"
+      />
+      <h1 className="text-4xl font-extrabold">{loggedUser.userName}</h1>
       <h2>First Name</h2>
       <h3>{loggedUser.fName}</h3>
       <h2>Last Name</h2>
@@ -19,7 +23,7 @@ const UserProfile = () => {
       <h3>{loggedUser.email}</h3>
       <h2>About</h2>
       <h3>{loggedUser.about}</h3>
-    </>
+    </main>
   );
 };
 
