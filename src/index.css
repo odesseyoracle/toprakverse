@@ -6,6 +6,10 @@ body {
   background-color: #fee4c1;
 }
 
+#toprakverse-h1 {
+  text-shadow: -2px -2px 0 #fff,2px 2px 0 #fff, 2px 2px 0 #fff,2px 2px 0 #fff;
+}
+
 /* // <uniquifier>: Use a uniquifier for the class name
 // <weight>: Use a value from 100 to 900
 

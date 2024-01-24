@@ -1,7 +1,7 @@
 import "./App.css";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import Navigation from "./pages/Navigation";
+import Navigation from "./components/Navigation";
 import Friends from "./pages/Friends";
 import UserProfile from "./pages/UserProfile";
 import SignUp from "./pages/SignUp";
