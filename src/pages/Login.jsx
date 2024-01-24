@@ -29,9 +29,13 @@ const Login = () => {
   }
 
   return (
-    <div>
-      <Input name="username" type="text" setMethod={setCurrentUser} />
-      <Input name="password" type="password" setMethod={setCurrentUser} />
+    <div className="signUp bg-secondary p-8 rounded-md shadow-md max-w-md mx-auto mt-10">
+      <Input name="username" type="text" setMethod={setCurrentUser}>
+        Username
+      </Input>
+      <Input name="password" type="password" setMethod={setCurrentUser}>
+        Password
+      </Input>
       <Button event={handleSubmit}>Log In</Button>
     </div>
   );
