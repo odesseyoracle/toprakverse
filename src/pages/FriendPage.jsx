@@ -9,7 +9,7 @@ export const FriendPage = () => {
   const friend = userData.find((user) => user.id == id);
 
   return (
-    <div>
+    <div className="m-20">
       <img src={friend.profilePicture} alt="Profile Picture" />
       <h1>{friend.userName}</h1>
       <h2>First Name</h2>
