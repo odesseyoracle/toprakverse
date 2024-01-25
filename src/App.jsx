@@ -7,11 +7,14 @@ import SignUp from "./pages/SignUp";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import { FriendPage } from "./pages/FriendPage";
+import Navigation from "./components/Navigation";
+import Navigation from "./Navigation";
 
 function App() {
   return (
     <>
       <Header />
+      <Navigation />
       <Routes>
         <Route path="/toprakverse" index={true} element={<Home />} />
         <Route path="/signUp" element={<SignUp />} />

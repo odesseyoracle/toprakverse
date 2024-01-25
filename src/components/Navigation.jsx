@@ -26,7 +26,7 @@ function Navigation() {
   }
 
   return (
-    <nav>
+    <nav className=" absolute top-0 right-0 m-5">
       {/* Burger Menu Icon */}
       <div
         onClick={toggleNav}
@@ -36,7 +36,7 @@ function Navigation() {
           transition: "transform 0.2s ease-in-out",
         }}
       >
-        <i className="fa-solid fa-burger"></i>
+        <i className="fa-solid fa-bars fa-2xl"></i>
       </div>
 
       {/* Navigation Links */}
