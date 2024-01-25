@@ -63,7 +63,6 @@ function Navigation() {
         </li>
         <li>
           <Button event={handleLogout}>Log Out</Button>
-          {/* Test */}
         </li>
       </ul>
     </nav>
