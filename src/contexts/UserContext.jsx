@@ -18,9 +18,7 @@ const userDataReducer = (state, action) => {
       return [...state, action.payload];
     case "updateUser": {
       const updatedUserArray = state.map((user) => {
-        return user.id === action.id
-          ? { ...user, [action.changedKey]: action.changedValue }
-          : user;
+        return user.id === action.id ? { ...user, ...action.payload } : user;
       });
       return updatedUserArray;
     }
