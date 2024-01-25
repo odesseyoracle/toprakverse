@@ -32,7 +32,6 @@ const userDataReducer = (state, action) => {
 export default function UserContextProvider({ children }) {
   const [userData, dispatch] = useReducer(userDataReducer, users);
   const [loggedUserId, setLoggedUserId] = useState(0);
-
   return (
     <UserContext.Provider
       value={{ userData, dispatch, loggedUserId, setLoggedUserId }}
