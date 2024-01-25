@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Post from '../components/post';
+import Post from '../components/Post';
 import Button from '../components/Button';
 import { useUserContext } from "../contexts/UserContext";
 
