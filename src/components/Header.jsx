@@ -1,8 +1,10 @@
 import React from "react";
+import Navigation from "./Navigation";
 import logo from "../assets/images/logo.jpg";
 
 const Header = () => {
   return (
+
     <header className="sticky flex flex-col items-center">
       <img src={logo} alt="alt-text" className="w-1/5 h-1/5 z-1" />
       <h1
@@ -12,6 +14,7 @@ const Header = () => {
         TOPRAKVERSE
       </h1>
     </header>
+
   );
 };
 
