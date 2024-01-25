@@ -5,7 +5,7 @@ import { useUserContext } from "../contexts/UserContext";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const { userData, dispatch } = useUserContext();
+  const { userData, dispatch, setLoggedUserId } = useUserContext();
   console.log("userData:", userData);
   const navigate = useNavigate();
 
@@ -21,6 +21,7 @@ const Login = () => {
     );
     console.log("found user:", user);
     if (user) {
+      setLoggedUserId(user.id);
       dispatch({ type: "logUser", id: user.id });
       navigate("/toprakverse");
     } else {
