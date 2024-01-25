@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Button from "./Button";
 
 function Navigation() {
   const [isNavOpen, setNavOpen] = useState(false);
@@ -9,7 +10,6 @@ function Navigation() {
     setNavOpen(!isNavOpen);
     setIsClicked(true);
 
-   
     setTimeout(() => {
       setIsClicked(false);
     }, 200);
@@ -21,7 +21,10 @@ function Navigation() {
       <div
         onClick={toggleNav}
         className={`burger-menu-icon ${isClicked ? "active" : ""}`}
-        style={{ transform: isClicked ? "scale(1.1)" : "scale(1)", transition: "transform 0.2s ease-in-out" }}
+        style={{
+          transform: isClicked ? "scale(1.1)" : "scale(1)",
+          transition: "transform 0.2s ease-in-out",
+        }}
       >
         <i className="fa-solid fa-burger"></i>
       </div>
@@ -29,19 +32,27 @@ function Navigation() {
       {/* Navigation Links */}
       <ul className={`nav-list ${isNavOpen ? "block" : "hidden"}`}>
         <li>
-          <Link to="/toprakverse" className="block">Home</Link>
+          <Link to="/toprakverse" className="block">
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/signUp" className="block">Sign Up</Link>
+          <Link to="/signUp" className="block">
+            Sign Up
+          </Link>
         </li>
         <li>
-          <Link to="/userProfile" className="block">Profil</Link>
+          <Link to="/userProfile" className="block">
+            Profil
+          </Link>
         </li>
         <li>
-          <Link to="/friends" className="block">Friends</Link>
+          <Link to="/friends" className="block">
+            Friends
+          </Link>
         </li>
         <li>
-          <Link to="/login" className="block">Log Out</Link>
+          <Button event={handleLogout}>Log Out</Button>
         </li>
       </ul>
     </nav>
@@ -49,4 +60,3 @@ function Navigation() {
 }
 
 export default Navigation;
-
