@@ -22,7 +22,7 @@ function Navigation() {
   function handleLogout() {
     dispatch({ type: "logUser", id: loggedUserId });
     setLoggedUserId(0);
-    navigate("/login");
+    navigate("/toprakverse");
   }
 
   return (
@@ -47,13 +47,8 @@ function Navigation() {
           </Link>
         </li>
         <li>
-          <Link to="/signUp" className="block">
-            Sign Up
-          </Link>
-        </li>
-        <li>
           <Link to="/userProfile" className="block">
-            Profil
+            My Profile
           </Link>
         </li>
         <li>

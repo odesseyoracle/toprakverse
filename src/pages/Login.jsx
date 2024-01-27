@@ -3,6 +3,8 @@ import Input from "../components/Input";
 import Button from "../components/Button";
 import { useUserContext } from "../contexts/UserContext";
 import { useNavigate } from "react-router-dom";
+import logo from "../assets/images/logo.jpg";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const { userData, dispatch, setLoggedUserId } = useUserContext();
@@ -23,21 +25,31 @@ const Login = () => {
     if (user) {
       setLoggedUserId(user.id);
       dispatch({ type: "logUser", id: user.id });
-      navigate("/toprakverse");
+      navigate("/home");
     } else {
       alert("Username or password not correct");
     }
   }
 
   return (
-    <div className="signUp bg-secondary p-8 rounded-md shadow-md max-w-md mx-auto mt-10">
-      <Input name="username" type="text" setMethod={setCurrentUser}>
-        Username
-      </Input>
-      <Input name="password" type="password" setMethod={setCurrentUser}>
-        Password
-      </Input>
-      <Button event={handleSubmit}>Log In</Button>
+    <div>
+      <img src={logo} alt="Logo" />
+      <div className="signUp bg-secondary p-8 rounded-md shadow-md max-w-md mx-auto mt-10">
+        <Input name="username" type="text" setMethod={setCurrentUser}>
+          Username
+        </Input>
+        <Input name="password" type="password" setMethod={setCurrentUser}>
+          Password
+        </Input>
+        <Button event={handleSubmit}>Log In</Button>
+        <br />
+        <Link
+          to="/signUp"
+          className="underline text-md text-gray-900 hover:text-gray-600"
+        >
+          No Profile yet? Sign up here ...
+        </Link>
+      </div>
     </div>
   );
 };

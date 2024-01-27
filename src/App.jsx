@@ -8,16 +8,23 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import { FriendPage } from "./pages/FriendPage";
 import Navigation from "./components/Navigation";
+import { useUserContext } from "./contexts/UserContext";
 
 function App() {
+  const { loggedUserId } = useUserContext();
+
   return (
     <>
-      <Header />
-      <Navigation />
+      {loggedUserId != 0 && (
+        <>
+          <Header />
+          <Navigation />
+        </>
+      )}
       <Routes>
-        <Route path="/toprakverse" index={true} element={<Home />} />
+        <Route path="/home" index={true} element={<Home />} />
         <Route path="/signUp" element={<SignUp />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/toprakverse" element={<Login />} />
         <Route path="/friends" element={<Friends />} />
         <Route path="/userProfile" element={<UserProfile />} />
         <Route path="/friend/:id" element={<FriendPage />} />
