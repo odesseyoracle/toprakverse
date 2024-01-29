@@ -1,11 +1,11 @@
 {
   "name": "toprakverse",
-  "homepage": "https://github.com/odesseyoracle/toprakverse.git",
+  "homepage": "https://odesseyoracle.github.io/toprakverse",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp ./dist/index.html ./dist/404.html",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",

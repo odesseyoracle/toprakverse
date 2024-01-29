@@ -22,9 +22,9 @@ function App() {
         </>
       )}
       <Routes>
-        <Route path="/home" index={true} element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/signUp" element={<SignUp />} />
-        <Route path="/toprakverse" element={<Login />} />
+        <Route path="/" index={true} element={<Login />} />
         <Route path="/friends" element={<Friends />} />
         <Route path="/userProfile" element={<UserProfile />} />
         <Route path="/friend/:id" element={<FriendPage />} />

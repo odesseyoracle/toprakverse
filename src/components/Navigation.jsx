@@ -22,7 +22,7 @@ function Navigation() {
   function handleLogout() {
     dispatch({ type: "logUser", id: loggedUserId });
     setLoggedUserId(0);
-    navigate("/toprakverse");
+    navigate("/");
   }
 
   return (
