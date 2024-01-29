@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Post from "../components/Post";
 import Button from "../components/Button";
 import { useUserContext } from "../contexts/UserContext";
@@ -9,6 +9,10 @@ const Home = () => {
   const [posts, setPosts] = useState(allPosts);
   const { userData } = useUserContext();
   const loggedUser = userData.find((user) => user.loggedIn);
+  useEffect(() => {
+    const storedPosts = JSON.parse(localStorage.getItem("posts")) || allPosts;
+    setPosts(storedPosts);
+  }, []);
 
   const handleNewPost = (e) => {
     setNewPost(e.target.value);
@@ -16,11 +20,15 @@ const Home = () => {
 
   const handleAddPost = () => {
     const currentPost = {
+      profilePicture: loggedUser.profilePicture,
       username: loggedUser.userName,
       content: newPost,
       date: new Date().toISOString().slice(0, 10),
       picture: loggedUser.profilePicture,
     };
+
+    const updatedPosts = [currentPost, ...posts];
+    localStorage.setItem("posts", JSON.stringify(updatedPosts));
     setPosts((prev) => [currentPost, ...prev]);
     setNewPost("");
   };
