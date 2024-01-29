@@ -23,7 +23,7 @@ const Home = () => {
       profilePicture: loggedUser.profilePicture,
       username: loggedUser.userName,
       content: newPost,
-      date: new Date().toISOString().slice(0, 10),
+      date: new Date().toLocaleDateString("de-DE"),
       picture: loggedUser.profilePicture,
     };
 
