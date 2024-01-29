@@ -9,9 +9,15 @@ import Header from "./components/Header";
 import { FriendPage } from "./pages/FriendPage";
 import Navigation from "./components/Navigation";
 import { useUserContext } from "./contexts/UserContext";
+import { useEffect } from "react";
 
 function App() {
-  const { loggedUserId } = useUserContext();
+  const { loggedUserId, setLoggedUserId } = useUserContext();
+  useEffect(() => {
+    const newLoggedUserId =
+      JSON.parse(localStorage.getItem("loggedUserId")) || loggedUserId;
+    setLoggedUserId(newLoggedUserId);
+  }, []);
 
   return (
     <>

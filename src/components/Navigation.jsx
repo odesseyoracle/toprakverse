@@ -21,6 +21,7 @@ function Navigation() {
 
   function handleLogout() {
     dispatch({ type: "logUser", id: loggedUserId });
+    localStorage.setItem("loggedUserId", JSON.stringify("0"));
     setLoggedUserId(0);
     navigate("/");
   }

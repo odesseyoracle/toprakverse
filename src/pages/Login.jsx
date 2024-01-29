@@ -24,6 +24,7 @@ const Login = () => {
     console.log("found user:", user);
     if (user) {
       setLoggedUserId(user.id);
+      localStorage.setItem("loggedUserId", JSON.stringify(user.id));
       dispatch({ type: "logUser", id: user.id });
       navigate("/home");
     } else {
