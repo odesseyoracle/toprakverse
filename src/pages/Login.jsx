@@ -34,6 +34,12 @@ const Login = () => {
   return (
     <div>
       <img src={logo} alt="Logo" />
+      <h1
+        id="toprakverse-h1"
+        className="font-sans font-extrabold text-2xl text-yellow-600 text-opacity-50 tracking-wider"
+      >
+        TOPRAKVERSE
+      </h1>
       <div className="signUp bg-secondary p-8 rounded-md shadow-md max-w-md mx-auto mt-10">
         <Input name="username" type="text" setMethod={setCurrentUser}>
           Username
