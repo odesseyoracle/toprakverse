@@ -10,7 +10,7 @@ const Friends = () => {
   return (
     <div className="m-20">
       <h1 className="text-4xl font-extrabold">Friends</h1>
-      <div>
+      <div className="flex flex-col justify-center items-center">
         {friends.map((user) => {
           return (
             <Card

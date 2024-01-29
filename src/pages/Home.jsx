@@ -37,9 +37,10 @@ const Home = () => {
     <div className="flex flex-col items-center">
       <h1 className="text-2xl font-bold">Home</h1>
       <textarea
-        className="border-solid border-2 border-black m-3 p-3 w-96 h-24"
+        className="border-solid border-2 border-tertiary rounded-md m-3 mb-0 p-3 w-96 h-24"
         placeholder="What's on your mind?"
         onChange={handleNewPost}
+        value={newPost}
       ></textarea>
       <Button event={handleAddPost}>Post It!</Button>
       {posts.map((post, index) => (

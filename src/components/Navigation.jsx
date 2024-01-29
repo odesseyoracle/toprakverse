@@ -40,9 +40,13 @@ function Navigation() {
       </div>
 
       {/* Navigation Links */}
-      <ul className={`nav-list ${isNavOpen ? "block" : "hidden"}`}>
+      <ul
+        className={` bg-secondary w-60 h-60 flex flex-col justify-between p-5 rounded-md nav-list ${
+          isNavOpen ? "block" : "hidden"
+        }`}
+      >
         <li>
-          <Link to="/toprakverse" className="block">
+          <Link to="/home" className="block">
             Home
           </Link>
         </li>

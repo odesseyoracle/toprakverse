@@ -36,7 +36,7 @@ const Login = () => {
       <img src={logo} alt="Logo" />
       <h1
         id="toprakverse-h1"
-        className="font-sans font-extrabold text-2xl text-yellow-600 text-opacity-50 tracking-wider"
+        className="font-sans font-extrabold text-6xl text-yellow-600 text-opacity-50 tracking-wider"
       >
         TOPRAKVERSE
       </h1>

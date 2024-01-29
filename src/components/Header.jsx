@@ -4,7 +4,7 @@ import logo from "../assets/images/logo.jpg";
 
 const Header = () => {
   return (
-    <header className="border-solid border-black border-2 sticky flex flex-row items-center justify-between  p-5">
+    <header className=" sticky flex flex-row items-center justify-between  p-5">
       <img src={logo} alt="alt-text" className="w-1/5 h-1/5 z-1" />
       <h1
         id="toprakverse-h1"
