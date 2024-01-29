@@ -29,7 +29,7 @@ function SignUp() {
         profilePicture: genericProfilePicture,
       },
     });
-    navigate("/toprakverse");
+    navigate("/");
   };
 
   return (
