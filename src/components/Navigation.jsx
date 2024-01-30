@@ -42,6 +42,10 @@ function Navigation() {
 
       {/* Navigation Links */}
       <ul
+        style={{
+          position: "absolute",
+          right: "0",
+        }}
         className={` bg-secondary w-60 h-60 flex flex-col justify-between p-5 rounded-md nav-list ${
           isNavOpen ? "block" : "hidden"
         }`}
