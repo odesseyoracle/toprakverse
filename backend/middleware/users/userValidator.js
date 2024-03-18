@@ -11,7 +11,7 @@ const userValidationRules = [
   body(lName)
     .isLength({ min: 2, max: 30 })
     .withMessage("Last Name must contain at least 2 an max 30 characters."),
-  body(email).isEmail().,
+  body(email).isEmail(),
   body(password),
   body(profilePicture),
   body(about),
