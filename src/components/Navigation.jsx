@@ -51,7 +51,7 @@ function Navigation() {
         }`}
       >
         <li>
-          <Link to="/home" className="block">
+          <Link to="/" className="block">
             Home
           </Link>
         </li>

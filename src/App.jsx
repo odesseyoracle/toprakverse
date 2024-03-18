@@ -10,6 +10,9 @@ import { FriendPage } from "./pages/FriendPage";
 import Navigation from "./components/Navigation";
 import { useUserContext } from "./contexts/UserContext";
 import { useEffect } from "react";
+import PrivateRoutes from "./utils/PrivateRoutes";
+
+const loggedIn = false;
 
 function App() {
   const { loggedUserId, setLoggedUserId } = useUserContext();
@@ -28,12 +31,14 @@ function App() {
         </>
       )}
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route element={<PrivateRoutes />}>
+          <Route path="/" index={true} element={<Home />} />
+          <Route path="/friends" element={<Friends />} />
+          <Route path="/userProfile" element={<UserProfile />} />
+          <Route path="/friend/:id" element={<FriendPage />} />
+        </Route>
         <Route path="/signUp" element={<SignUp />} />
-        <Route path="/" index={true} element={<Login />} />
-        <Route path="/friends" element={<Friends />} />
-        <Route path="/userProfile" element={<UserProfile />} />
-        <Route path="/friend/:id" element={<FriendPage />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </>
   );
